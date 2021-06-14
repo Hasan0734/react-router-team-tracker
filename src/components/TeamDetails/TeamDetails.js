@@ -11,17 +11,17 @@ const TeamDetails = () => {
         .then(data => setTeam(data.teams))
     }, [])
     const teamDetail = team[0]
-      console.log(teamDetail)
+    
     return (
         <div>
         <div className="header-container">
            <div className="overlay-color d-flex align-items-center">
                <div className="container">
-                   
+               <h1 className="text-light text-center">Team Tracker</h1>
                </div>
            </div>
         </div>
-        <TeamDetailBody></TeamDetailBody>
+        <TeamDetailBody team={teamDetail}></TeamDetailBody>
         </div>
     );
 };

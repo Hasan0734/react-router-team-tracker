@@ -1,9 +1,16 @@
 import React from 'react';
-
-const TeamDetailBody = () => {
+import './TeamDetailBody.css'
+const TeamDetailBody = (props) => {
+    console.log(props.team)
+    const{strTeam} = props.team
     return (
-        <div>
-            <h1>This is team body</h1>
+        <div className="teams">
+           <div className="container">
+               <div className="text-light team-description">
+                   <h1>{strTeam}</h1>
+               </div>
+           
+           </div>
         </div>
     );
 };

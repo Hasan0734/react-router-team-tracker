@@ -4,19 +4,28 @@ import './AllTeam.css'
 
 const AllTeam = () => {
     const [teams, setTeams] = useState([]);
-    useEffect(()=> {
+    useEffect(() => {
         const url = 'https://www.thesportsdb.com/api/v1/json/1/search_all_teams.php?l=English%20Premier%20League';
         fetch(url)
-        .then(res => res.json())
-        .then(data => setTeams(data.teams))
-    },[])
-    console.log(teams)
+            .then(res => res.json())
+            .then(data => setTeams(data.teams))
+    }, [])
+
     return (
-        <div className="all-teams">
+        <div className="teams">
             <div className="container">
                 <div className="row pt-5">
                     {
-                        teams.map(tem => <Team team = {tem}></Team>)
+                       teams? teams.map(tem => <Team team={tem}></Team>): 
+                        <div class="text-center text-light">
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                       
+                    }
+                    {
+                        teams.map(tem => <Team team={tem}></Team>)
                     }
                 </div>
             </div>
