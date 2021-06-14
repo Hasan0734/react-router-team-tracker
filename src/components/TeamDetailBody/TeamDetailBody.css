@@ -1,5 +1,23 @@
-.team-description{
-    background: orange;
-    padding: 10px 15px;
-  
+.team-description {
+  background: #fc4d57;
+
+  border-radius: 15px;
+}
+.team-name {
+  font-size: 60px;
+}
+
+.team-description p {
+  font-size: 21px;
+  font-weight: 500;
+}
+.summary{
+    margin-top: 25px;
+    color: #C6C6C6;
+}
+footer img{
+    width: 5%;
+}
+footer a{
+   margin: 10px;
 }

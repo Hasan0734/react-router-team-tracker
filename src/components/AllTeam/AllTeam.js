@@ -10,20 +10,11 @@ const AllTeam = () => {
             .then(res => res.json())
             .then(data => setTeams(data.teams))
     }, [])
-
+  
     return (
         <div className="teams">
             <div className="container">
                 <div className="row pt-5">
-                    {
-                       teams? teams.map(tem => <Team team={tem}></Team>): 
-                        <div class="text-center text-light">
-                        <div class="spinner-border" role="status">
-                            <span class="visually-hidden">Loading...</span>
-                        </div>
-                    </div>
-                       
-                    }
                     {
                         teams.map(tem => <Team team={tem}></Team>)
                     }

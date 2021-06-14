@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Team.css";
 const Team = (props) => {
-  const { strTeam, strTeamBadge, strSport } = props.team;
- 
+  const { strTeam, strTeamBadge, strSport,idTeam } = props.team;
+ console.log(props.team.idTeam)
   return (
     <div className="col-4">
       <div className="card">
@@ -14,7 +14,7 @@ const Team = (props) => {
           <div className="text-center pb-4">
             <h3>{strTeam} </h3>
             <p>Sports Type {strSport}</p>
-            <Link to="/team-info">
+            <Link to={`/team-info/${idTeam}`}>
             <button className="btn btn-primary">Explore →</button>
             </Link>
           </div>
