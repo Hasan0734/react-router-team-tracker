@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Team.css";
 const Team = (props) => {
-  console.log(props.team);
   const { strTeam, strTeamBadge, strSport } = props.team;
+ 
   return (
     <div className="col-4">
       <div className="card">
@@ -13,7 +14,9 @@ const Team = (props) => {
           <div className="text-center pb-4">
             <h3>{strTeam} </h3>
             <p>Sports Type {strSport}</p>
+            <Link to="/team-info">
             <button className="btn btn-primary">Explore →</button>
+            </Link>
           </div>
         </div>
       </div>
