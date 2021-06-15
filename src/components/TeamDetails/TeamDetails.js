@@ -17,8 +17,10 @@ const TeamDetails = () => {
         <div>
         <div className="header-container">
            <div className="overlay-color d-flex align-items-center">
-               <div className="container p-5 team-badge d-flex justify-content-center">
-               <img  src={team.strTeamBadge} alt="" />
+               <div className="container  d-flex justify-content-center ">
+               <div className="col-7 col-sm-4  d-flex justify-content-center">
+               <img className="w-50 img-fluid" src={team.strTeamBadge} alt="" />
+               </div>
                </div>
            </div>
         </div>

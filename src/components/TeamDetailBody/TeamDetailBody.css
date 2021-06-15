@@ -4,7 +4,7 @@
   border-radius: 15px;
 }
 .team-name {
-  font-size: 60px;
+  font-size: 55px;
 }
 
 .team-description p {
@@ -14,10 +14,9 @@
 .summary{
     margin-top: 25px;
     color: #C6C6C6;
+    text-align: justify;
 }
 footer img{
-    width: 5%;
-}
-footer a{
-   margin: 10px;
+    width: 11%;
+    margin: 10px;
 }
