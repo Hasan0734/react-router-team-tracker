@@ -4,14 +4,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import NoMatch from './components/NoMatch/NoMatch';
-import TeamDetails from './components/TeamDetails/TeamDetails';
+import TeamDetails from './components/TeamDetails/TeamDetails'; 
 function App() {
   return (
-    <div>
-
     <Router>
       <Switch>
         <Route path="/home">
@@ -27,7 +24,7 @@ function App() {
           <NoMatch/>
         </Route>
       </Switch>
-    </Router></div>
+    </Router>
   );
 }
 

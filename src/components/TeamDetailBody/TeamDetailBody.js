@@ -13,10 +13,9 @@ import femaleImg from "../../images/female.png";
 import facebook from '../../images/icon/Facebook.png';
 import youtube from '../../images/icon/YouTube.png';
 import twitter from '../../images/icon/Twitter.png';
-import { Link } from "react-router-dom";
 const TeamDetailBody = (props) => {
 
-  const { strTeamBadge, strTeam, intFormedYear, strCountry, strSport, strGender, strDescriptionEN, strStadiumDescription, strFacebook, strTwitter, strYoutube } =
+  const { strTeam, intFormedYear, strCountry, strSport, strGender, strDescriptionEN, strStadiumDescription, strFacebook, strTwitter, strYoutube } =
     props.team;
 
   const photos = () => {
@@ -63,9 +62,9 @@ const TeamDetailBody = (props) => {
         </div>
 
         <footer className="text-center py-3">
-          <a href={`https://${strTwitter}`} target="_blank"><img  src={twitter} alt="" /></a>
-          <a href={`https://${strFacebook}`} target="_blank"><img  src={facebook} alt="" /></a>
-          <a href={`https://${strYoutube}`} target="_blank"><img  src={youtube} alt="" /></a>
+          <a href={`https://${strTwitter}`} target="_blank" rel="noreferrer"><img  src={twitter} alt="" /></a>
+          <a href={`https://${strFacebook}`} target="_blank" rel="noreferrer"><img  src={facebook} alt="" /></a>
+          <a href={`https://${strYoutube}`} target="_blank" rel="noreferrer"><img  src={youtube} alt="" /></a>
         </footer>
       </div>
     </div>
