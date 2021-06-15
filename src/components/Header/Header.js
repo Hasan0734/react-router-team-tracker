@@ -5,7 +5,7 @@ const Header = () => {
         <div className="header-container">
            <div className="overlay-color d-flex align-items-center">
                <div className="container">
-                   <h1 className="text-center text-light">Sports League</h1>
+                   <h1 className="text-center text-light">Team Tracker</h1>
                </div>
                 
            </div>
