@@ -1,12 +1,12 @@
-.header-container{
+.header-container {
     height: 350px;
     width: 100%;
     background: url(../../images/h-bg.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-  
 }
-.overlay-color{
+
+.overlay-color {
     background: #000000c4;
     height: 100%;
 }

@@ -22,7 +22,7 @@ const TeamDetailBody = (props) => {
     if (strGender === "Male") {
       return <img className="w-100" src={manImg} alt="" />
     } else if (strGender === "Female") {
-      return  <img className="w-100 " src={femaleImg} alt="" />
+      return <img className="w-100 " src={femaleImg} alt="" />
     }
   }
   return (
@@ -49,7 +49,7 @@ const TeamDetailBody = (props) => {
           <div className="col-12 col-sm-6 my-3 my-sm-0 d-flex justify-content-end py-2 ">
 
             {
-              photos() 
+              photos()
             }
 
 
@@ -62,9 +62,9 @@ const TeamDetailBody = (props) => {
         </div>
 
         <footer className="text-center py-3">
-          <a href={`https://${strTwitter}`} target="_blank" rel="noreferrer"><img  src={twitter} alt="" /></a>
-          <a href={`https://${strFacebook}`} target="_blank" rel="noreferrer"><img  src={facebook} alt="" /></a>
-          <a href={`https://${strYoutube}`} target="_blank" rel="noreferrer"><img  src={youtube} alt="" /></a>
+          <a href={`https://${strTwitter}`} target="_blank" rel="noreferrer"><img src={twitter} alt="" /></a>
+          <a href={`https://${strFacebook}`} target="_blank" rel="noreferrer"><img src={facebook} alt="" /></a>
+          <a href={`https://${strYoutube}`} target="_blank" rel="noreferrer"><img src={youtube} alt="" /></a>
         </footer>
       </div>
     </div>
